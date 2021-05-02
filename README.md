@@ -45,7 +45,7 @@
 
 Use the routs according to the data.
 
-# Availavle Routs  
+# Available Routs  
 
 1. herokuUrl/admin/advisor/   Method = POST,  Request = name, photo_url,  Return = None, status code 
 2. herokuUrl/user/register/   Method = POST, Request = name, email, password, Return = id, jwt token
