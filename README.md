@@ -42,5 +42,13 @@
             id:4
             name:advisor4
             photo_url:advisor4photourl}
-            
-            ]
+
+Use the routs according to the data.
+Routs avaialble.   
+
+1. herokuUrl/admin/advisor/   Method = POST,  Request = name, photo_url,  Return = None, status code 
+2. herokuUrl/user/register/   Method = POST, Request = name, email, password, Return = id, jwt token
+3. herokuUrl/user/login/      Method = POST, Request = name, passwrod, Return = id, jwt token
+4. herokuUrl/user/<id>/advisor/  Method = GET, Request = None , Return = List of advisor  
+5. herokuUrl/user/<user_id>/advisor/<adv_id>/   Method= POST, Request = dateTime eg: '25/3/2021 10:22', Return = None , status code
+6. herokuUrl/user/<user_id>/advisor/booking/   Method= GET, Request = None, Return = An array of advisor , status code
