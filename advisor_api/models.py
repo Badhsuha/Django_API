@@ -1,11 +1,13 @@
 from django.db import models
 
+
 class Advisor(models.Model):
     name = models.CharField(max_length=120)
     photo_url = models.CharField(max_length=225)
 
     def __str__(self):
         return self.name
+
 
 class User(models.Model):
     name = models.CharField(max_length=120)
@@ -14,6 +16,8 @@ class User(models.Model):
 
     def __str__(self):
         return self.name
+
+
 class Booking(models.Model):
     dateTime = models.CharField(max_length=120)
     adv_id = models.ForeignKey(Advisor, on_delete=models.CASCADE)
