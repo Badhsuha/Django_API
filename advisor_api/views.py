@@ -42,7 +42,7 @@ class LoginUser(APIView):
             return Response('401_AUTHENTICATION_ERROR' ,401)
 
         token = jwt.encode({"name": qs.id, "email": qs.email }, SECRET_KEY , algorithm="HS256")
-        return Response({'id':qs.id, 'token':token}, 200)
+        return Response({'user-id':qs.id, 'token':token}, 200)
 
 
 class GetAdvisor(APIView):
