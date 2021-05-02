@@ -3,7 +3,7 @@
 
 # Sample data already added
 
-users = [{
+     users = [{
           id:1
           name:'user1'
           email:'user1@gmail.com'
@@ -20,7 +20,7 @@ users = [{
           password:'user2password'},
          ]
          
-Advisor = [
+    Advisor = [
 
             {
             id:1
