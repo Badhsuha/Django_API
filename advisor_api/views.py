@@ -25,7 +25,7 @@ class RegisterUser(APIView):
             qs = User.objects.get(email=serialized_data.data['email'])
             id = qs.id
             token = jwt.encode({"name": serialized_data.data['name'], "email": serialized_data.data['email'] }, SECRET_KEY , algorithm="HS256")
-            return Response({'id':id, 'token':token})
+            return Response({'user-id':id, 'token':token})
         return Response("400_BAD_REQUEST", 400)
 
 
